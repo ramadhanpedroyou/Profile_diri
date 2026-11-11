@@ -1,0 +1,91 @@
+/* Reset CSS dasar agar tampilan konsisten */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Menggunakan CSS Flexbox untuk menengahkan kartu profil di tengah layar */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+/* Styling Kartu Profil */
+.card-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 350px;
+    padding: 30px 20px;
+    text-align: center;
+    
+    /* Menggunakan border-radius untuk melengkungkan sudut kartu */
+    border-radius: 15px;
+    
+    /* Menggunakan box-shadow agar kartu tampak timbul */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling Foto Diri */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    
+    /* border-radius 50% untuk membuat foto berbentuk lingkaran */
+    border-radius: 50%;
+    border: 4px solid #007bff;
+    margin-bottom: 15px;
+}
+
+/* Styling Nama dan NIS */
+.profile-name {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profile-nis {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Styling Deskripsi Minat */
+.profile-bio {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Container Tombol */
+.social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Styling Tombol */
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efek Hover saat tombol disentuh/ditunjuk cursor */
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
